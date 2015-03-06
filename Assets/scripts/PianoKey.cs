@@ -17,6 +17,6 @@ public class PianoKey : MonoBehaviour {
 
 	void OnMouseDown() {
 		// audio.pitch = Mathf.Pow( 2f, semitone_offset/12.0f );
-		audio.Play ();
+		GetComponent<AudioSource>().Play ();
 	}
 }
